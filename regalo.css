@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #ff4081;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.regalo {
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.revelar-btn {
+    background-color: #ff7043;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.revelar-btn:hover {
+    background-color: #ff5722;
+    transform: scale(1.1);
+}
+
+.mensaje-regalo {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+}
+
+.mensaje-regalo strong {
+    font-size: 1.4em;
+    color: #ff4081;
+}
+
+.cerrar-btn {
+    background-color: #9e9e9e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cerrar-btn:hover {
+    background-color: #616161;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.volver-btn {
+    background-color: #ff5722;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.volver-btn:hover {
+    background-color: #ff7043;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .revelar-btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    .mensaje-regalo {
+        font-size: 1em;
+    }
+
+    .volver-btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .revelar-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .mensaje-regalo {
+        font-size: 0.9em;
+    }
+
+    .volver-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
