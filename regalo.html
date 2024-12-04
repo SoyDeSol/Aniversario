@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Regalo Especial</title>
+    <link rel="stylesheet" href="regalo.css">
+</head>
+<body>
+
+    <header>
+        <h1>¡Tu Regalo Especial, Mi Amor! 🎁</h1>
+        <p>Te tengo una sorpresa para vos, mi amor. 💖</p>
+    </header>
+
+    <section class="regalo">
+        <button class="revelar-btn" onclick="mostrarRegalo()">¡Descubrilo ahora!</button>
+        <div id="mensaje-regalo" class="mensaje-regalo">
+            <p>¡Felices 1 Año Juntos! Te amo muchísimo, y acá te dejo un código de regalo de Roblox: <strong>tal</strong></p>
+            <button class="cerrar-btn" onclick="cerrarRegalo()">Cerrar</button>
+        </div>
+    </section>
+
+    <footer>
+        <button class="volver-btn" onclick="window.location.href='index.html'">Volver a la página principal</button>
+    </footer>
+
+    <script>
+        function mostrarRegalo() {
+            document.getElementById("mensaje-regalo").style.display = "block";
+        }
+
+        function cerrarRegalo() {
+            document.getElementById("mensaje-regalo").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
