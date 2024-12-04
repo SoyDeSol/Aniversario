@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #fff3e0;
+    overflow-x: hidden;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffa726;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-out;
+}
+
+h2.texto-gradiente {
+    background: linear-gradient(to right, #ff7043, #ffb74d);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#burbujas span {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    animation: burbujas 25s infinite;
+}
+
+#burbujas span:nth-child(odd) {
+    animation-duration: 20s;
+}
+
+@keyframes burbujas {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(-1000px) scale(0.5);
+    }
+}
+
+.cronologia {
+    background-color: #ffccbc;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.cronologia ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.cronologia li {
+    margin: 20px 0;
+    font-size: 1.4em;
+    color: #ff7043;
+    transition: color 0.3s ease;
+}
+
+.cronologia li:hover {
+    color: #ffb74d;
+}
+
+.contador {
+    background: #f48fb1;
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contador-dias span {
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+}
+
+.frases {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.frases button {
+    padding: 15px 30px;
+    background: #ffa726;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+.frases button:hover {
+    background: #ff7043;
+    transform: scale(1.05);
+}
+
+.frases p {
+    font-size: 1.3em;
+    color: #ff7043;
+    margin-top: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carta {
+    background-color: #ffccbc;
+    padding: 25px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-out;
+}
+
+.carta h2 {
+    color: #ff7043;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carta p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.btn-regalo {
+    display: inline-block;
+    background-color: #ff7043;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background 0.3s, transform 0.3s;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-top: 40px;
+    animation: fadeIn 2s ease-out;
+}
+
+.btn-regalo span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.btn-regalo:hover {
+    background-color: #ffb74d;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #ff7043;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .btn-regalo {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    .carta {
+        width: 90%;
+    }
+
+    .frases button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    .frases p {
+        font-size: 1.1em;
+    }
+
+    .cronologia ul {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
