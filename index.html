@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Año Juntos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="burbujas">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <header class="header">
+        <h1>¡Un Año Juntos, Mi Amor! 🧡</h1>
+        <h2 class="texto-gradiente">Nuestro amor es eterno, como esta página 🌟</h2>
+    </header>
+
+    <section class="cronologia">
+        <h2>Nuestra Historia 💞</h2>
+        <ul>
+            <li><strong>25/11/2023:</strong> Nos conocimos por Fortnite y todo comenzó.</li>
+            <li><strong>07/04/2024:</strong> Volvimos, para darnos cuenta lo que podemos ser.</li>
+            <li><strong>25/08/2024:</strong> Te pedí que seas mi pareja de verdad. 💍</li>
+        </ul>
+    </section>
+    
+    <section class="contador">
+        <h2>¿Sabías que...?</h2>
+        <p id="contador-dias">Han pasado <span id="dias"></span> días desde que nuestras vidas cambiaron para siempre. 🌟</p>
+    </section>
+
+    <section class="frases">
+        <h2>Un Mensaje para Vos</h2>
+        <button onclick="mostrarFrase()">Hacé clic para leer algo especial (cada vez que aprietes aparece algo distinto) 💖</button>
+        <p id="frase-mensaje">💕</p>
+    </section>
+
+    <section class="carta">
+        <h2>Mi Carta para Vos, Mi querida Solcito💌</h2>
+        <p>Ya pasó un año desde que nuestras vidas se cruzaron, y todavía no puedo creer cómo alguien tan increíble como vos llegó a mi mundo. Desde el primer día me atrapaste, con esa forma tan única de ser. No sé si te lo dije lo suficiente, pero tenerte en mi vida es algo que valoro más de lo que las palabras pueden explicar.</p>
+        <p>Un año juntos, lleno de charlas hasta tarde, risas, momentos únicos y también algunos desafíos que, aunque a veces nos costaron, nos hicieron más fuertes. A pesar de todo, acá estamos, vos y yo, eligiéndonos una vez más.</p>
+        <p>Vos sos especial, Sol. Tenés algo que no encuentro en nadie más, esa mezcla de dulzura, locura y esa chispa que hace que me den ganas de pelearla siempre por nosotros. Sé que no soy perfecto, ni cerca, pero desde el día en que entraste en mi vida, tengo más razones para intentar ser mejor, para seguir apostando a este amor que siento por vos.</p>
+        <p>Quiero que este primer año sea solo el comienzo, que sigamos construyendo algo lindo juntos. Porque a pesar de las diferencias, de los momentos complicados, yo te amo, y eso no va a cambiar. Me hacés bien, Solcito, me hacés soñar con un futuro que me llena de esperanza.</p>
+        <p>Gracias por todo, por estar, por ser como sos, por los momentos compartidos. Espero que este aniversario lo vivamos con la misma intensidad que sentimos cuando todo empezó. Sos mi Sol, y quiero que sigas iluminando mi vida.</p>
+        <p>Te amo, y siempre voy a dar lo mejor de mí por vos. Con todo mi corazón, <strong>Gonzalez Elias Lautaro</strong></p>
+    </section>
+
+    <!--
+    <div class="btn-container">
+        <a href="regalo.html" class="btn-regalo">
+            Descubrí tu regalo, beba <span>❤️</span>
+        </a>
+        
+    </div> -->
+
+    <!-- Js -->
+    <script>
+        function calcularDias() {
+            const inicio = new Date("2023-11-25");
+            const hoy = new Date();
+            const diferencia = Math.floor((hoy - inicio) / (1000 * 60 * 60 * 24));
+            document.getElementById("dias").textContent = diferencia;
+        }
+        calcularDias();
+
+        function mostrarFrase() {
+            const frases = [
+                "Sos lo mejor que me pasó en la vida. ❤️",
+                "Te amo más de lo que imaginás. 🌟",
+                "Cada día a tu lado es un regalo. 🎁",
+                "Gracias por ser mi persona favorita. 🧡",
+                "Nunca me cansaré de amarte. 💖"
+            ];
+            const indice = Math.floor(Math.random() * frases.length);
+            document.getElementById("frase-mensaje").textContent = frases[indice];
+        }
+    </script>
+
+    <footer>
+        <p>Hecho con todo mi amor para vos, de <strong>Gonzalez Elias Lautaro</strong> ❤️</p>
+        <p>Gracias por este increíble año. ¡Por muchos más juntos! ✨</p>
+        <p>La distancia nunca nos separará. Estamos juntos, siempre. 💕</p>
+    </footer>
+</body>
+</html>
